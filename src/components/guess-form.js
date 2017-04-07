@@ -14,12 +14,13 @@ export default class GuessForm extends React.Component {
     render() {
         return (
             <form onSubmit={e => this.onGuess(e)}>
-                <label htmlFor="userGuess">Enter your Guess</label>
-                <input type="text" name="userGuess" id="userGuess"
+                <label>Enter your Guess</label>
+                <input type="text" name="userGuessInput" id="userGuess"
                     className="text" maxLength="3" autoComplete="off"
                     placeholder={Math.round(Math.random() * 100)} required
                     ref={input => this.input = input} />
-                <input type="submit" id="guessButton" className="button" name="submit" value="Guess"/>
+                <span id="count"></span>
+                <input type="submit" id="guessButton" className="button" name="submit" value="Guess" />
             </form>
         );
     }
