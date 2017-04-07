@@ -7,5 +7,5 @@ describe('<InfoModal />', ()=>{
   it('Renders without crashing', ()=>{
     shallow(<InfoModal />)
   })
-  
+
 })

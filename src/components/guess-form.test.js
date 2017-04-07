@@ -16,9 +16,4 @@ describe('<GuessForm />', () => {
     wrapper.simulate('submit');
     expect(callback).toHaveBeenCalledWith(value);
   });
-
-  // it('Should not fire onGuess if input is empty', () => {
-    
-  // });
-
 })

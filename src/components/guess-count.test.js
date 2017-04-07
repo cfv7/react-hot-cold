@@ -23,6 +23,5 @@ describe('<GuessCount />', ()=>{
     const wrapper = mount(<GuessCount count={dummyGuesses.length} />)
     expect(wrapper.contains(<p>Guess #<span id="count">{wrapper.prop('count')}</span>!</p>)).toEqual(true);
   })
-
 })
 

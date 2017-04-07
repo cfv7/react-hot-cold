@@ -7,5 +7,4 @@ describe('<GuessList />', ()=>{
   it('Renders without crashing', () => {
     shallow(<GuessList guesses={['', '']} />)
   });
-
 })

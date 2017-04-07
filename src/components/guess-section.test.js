@@ -13,5 +13,4 @@ describe('<GuessSection />', () => {
     const wrapper = shallow(<GuessSection feedback={feedback}/>);
     expect(wrapper.contains(<h2 id="feedback">{feedback}</h2>)).toEqual(true);
   });
-
 })
