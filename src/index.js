@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Game from './components/game';
 import './reset.css';
 import './index.css';
+import './store.js'
 
 ReactDOM.render(
     <Game />,

@@ -1,28 +1,25 @@
 // ADD_GUESS, UPDATE_GUESSES, CHANGE_FEEDBACK, CHANGE_ANSWER, GUESSES
 
-export const ADD_GUESSES = 'ADD_GUESS';
-export const addGuesses = guess => ({
+export const ADD_GUESSES = 'ADD_GUESSES';
+export const addGuesses = (guess, feedback, correctAnswer) => ({
   type: ADD_GUESSES,
-  guess
+  guess,
+  feedback,
+  correctAnswer
 })
 
-export const UPDATE_GUESSES = 'UPDATE_GUESSES';
-export const updateGuesses = guesses => ({
-  type: UPDATE_GUESSES,
-  guesses
+export const START_NEW_GAME = 'START_NEW_GAME';
+export const startNewGame = correctAnswer => ({
+  type: START_NEW_GAME,
+  correctAnswer: Math.round(Math.random()*100)
 })
 
-export const CHANGE_FEEDBACK = 'CHANGE_FEEDBACK';
-export const changeFeedback = feedback => ({
-  type: CHANGE_FEEDBACK,
-  feedback
+export const OPEN_INFO_MODAL = 'OPEN_INFO_MODAL';
+export const openInfoModal = showInfoModal => ({
+  type: OPEN_INFO_MODAL,
+  showInfoModal
 })
 
-export const CORRECT_ANSWER = 'CORRECT_ANSWER';
-export const correctAnswer = answer => ({
-  type: CORRECT_ANSWER,
-  answer
-})
 
 
 
