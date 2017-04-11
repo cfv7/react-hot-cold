@@ -9,7 +9,7 @@ export const addGuesses = (guess, feedback, correctAnswer) => ({
 })
 
 export const START_NEW_GAME = 'START_NEW_GAME';
-export const startNewGame = correctAnswer => ({
+export const startNewGame = () => ({
   type: START_NEW_GAME,
   correctAnswer: Math.round(Math.random()*100)
 })
