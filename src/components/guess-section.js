@@ -1,13 +1,18 @@
 import React from 'react';
 
 import GuessForm from './guess-form';
+import {connect} from 'react-redux';
 
-export default function GuessSection(props) {
+export function GuessSection(props) {
     return (
         <section>
             <h2 id="feedback">{props.feedback}</h2>
-            <GuessForm onGuess={props.onGuess} />
+            <GuessForm />
         </section>
     );
 }
 
+const dog = (state) => ({
+    feedback: state.feedback
+});
+export default connect(dog)(GuessSection);

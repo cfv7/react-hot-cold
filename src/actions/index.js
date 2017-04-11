@@ -1,11 +1,7 @@
-// ADD_GUESS, UPDATE_GUESSES, CHANGE_FEEDBACK, CHANGE_ANSWER, GUESSES
-
 export const ADD_GUESSES = 'ADD_GUESSES';
-export const addGuesses = (guess, feedback, correctAnswer) => ({
+export const addGuesses = (guess) => ({
   type: ADD_GUESSES,
-  guess,
-  feedback,
-  correctAnswer
+  guess
 })
 
 export const START_NEW_GAME = 'START_NEW_GAME';
@@ -15,9 +11,8 @@ export const startNewGame = () => ({
 })
 
 export const OPEN_INFO_MODAL = 'OPEN_INFO_MODAL';
-export const openInfoModal = showInfoModal => ({
-  type: OPEN_INFO_MODAL,
-  showInfoModal
+export const openInfoModal = () => ({
+  type: OPEN_INFO_MODAL
 })
 
 
